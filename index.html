@@ -245,7 +245,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total INFECTED</h5>
-                      <span class="h2 font-weight-bold mb-0">350,897</span>
+                      <span id = "total-infected" class="h2 font-weight-bold mb-0">0</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
@@ -267,7 +267,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">Total DEATHS</h5>
-                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                      <span id="total-deaths" class="h2 font-weight-bold mb-0">2,356</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
@@ -289,7 +289,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">NEW CASES</h5>
-                      <span class="h2 font-weight-bold mb-0">924</span>
+                      <span id="total_new_cases_today" class="h2 font-weight-bold mb-0">924</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
@@ -311,7 +311,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">NEW DEATHS</h5>
-                      <span class="h2 font-weight-bold mb-0">49,65%</span>
+                      <span id="total_new_deaths_today" class="h2 font-weight-bold mb-0">49,65%</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -333,7 +333,7 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">COUNTRIES</h5>
-                      <span class="h2 font-weight-bold mb-0">49,65%</span>
+                      <span id="total_regions" class="h2 font-weight-bold mb-0">49,65%</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
@@ -363,6 +363,7 @@
                   <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
                   <h5 class="h3 text-white mb-0">TOTAL INFECTED</h5>
                 </div>
+                <!---
                 <div class="col">
                   <ul class="nav nav-pills justify-content-end">
                     <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="" data-suffix="">
@@ -379,13 +380,14 @@
                     </li>
                   </ul>
                 </div>
+                --->
               </div>
             </div>
             <div class="card-body">
               <!-- Chart -->
               <div class="chart">
                 <!-- Chart wrapper -->
-                <canvas id="chart-sales-dark" class="chart-canvas"></canvas>
+                <canvas id="chart-new-cases-dark" class="chart-canvas"></canvas>
               </div>
             </div>
           </div>
@@ -533,6 +535,8 @@
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
   <script src="assets/js/argon.js?v=1.2.0"></script>
+  <!-- Data JS-->
+  <script src="DataController.js"></script>
 </body>
 
 </html>
