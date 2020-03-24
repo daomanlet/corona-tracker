@@ -106,7 +106,7 @@ function autocomplete(inp, arr) {
 function search(ele){
   if(event.key === 'Enter') {
       //alert(ele.value);
-      reload("data/"+ele.value+"/statistic.json");
+      reload("data/"+ele.value+"/sync.json");
       document.getElementById("breadcrumb-current-item").innerHTML=ele.value;
   }
 }

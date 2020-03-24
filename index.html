@@ -19,8 +19,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
+  <meta name="description" content="Coronavirus Tracker">
+  <meta name="author" content="Rouyn">
   <title>Global Coronavirus Tracker</title>
   <!-- Favicon -->
   <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
@@ -359,24 +359,6 @@
                   <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
                   <h5 class="h3 text-white mb-0">TOTAL INFECTED</h5>
                 </div>
-                <!---
-                <div class="col">
-                  <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="" data-suffix="">
-                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
-                        <span class="d-none d-md-block">Day</span>
-                        <span class="d-md-none">D</span>
-                      </a>
-                    </li>
-                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="" data-suffix="">
-                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">Week</span>
-                        <span class="d-md-none">W</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                --->
               </div>
             </div>
             <div class="card-body">
@@ -418,7 +400,10 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="row">
+        <div class="col-xl-12" id="geo-container">
+        </div>
       </div>
       <!-- Footer -->
       <footer class="footer pt-0">
@@ -459,10 +444,21 @@
   <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <script src="assets/vendor/select2/dist/js/select2.min.js"></script>
+  <!-- echarts -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=15KxdGBSO17pFhjfOtyZShe8ZAEyFZDQ&__ec_v__=20190126"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script> -->
   <!-- Argon JS -->
   <script src="assets/js/argon.js?v=1.2.0"></script>
   <!-- Data JS-->
   <script src="DataController.js"></script>
+  <!-- <script src="d3geo.js"></script> -->
+
 </body>
 
 </html>
